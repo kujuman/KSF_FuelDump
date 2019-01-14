@@ -1,0 +1,1 @@
+Add contents of 'GameData' to your KSP 'GameData' folder. Requires ModuleManager. Tested on KSP 1.6.0.
