@@ -15,7 +15,7 @@ namespace kuju_utils
         bool isArmed = false;
 
         [KSPField(guiName = "Fuel Dump Type", guiActive = false),
-            UI_Cycle(stateNames = new string[] { "LF+O", "Monoprop", "Liquid Fuel", "Oxidizer" })]
+            UI_Cycle(stateNames = new string[] { "LF+O", "Monoprop", "Liquid Fuel", "Oxidizer", "Snacks", "Xenon", "Ore" })]
         public int fuelToDrop = 0;
 
         [KSPField(guiName = "Dump Percent of Resource", guiActive = false),
@@ -60,6 +60,18 @@ namespace kuju_utils
 
                 case 3:
                     returnValue = new string[] { "Oxidizer" };
+                    break;
+
+                case 4:
+                    returnValue = new string[] { "Snacks" };
+                    break;
+
+                case 5:
+                    returnValue = new string[] { "XenonGas" };
+                    break;
+
+                case 6:
+                    returnValue = new string[] { "Ore" };
                     break;
 
                 default:
